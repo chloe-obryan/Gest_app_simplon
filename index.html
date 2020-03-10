@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GESTION_DES_APPRENANTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet"  href="font-awesome-4.7.0/css/font-awesome.css" />
+    
+</head>
+<body>
+
+    <!-- la partie concernat l'entête -->
+   <div class="container ">
+<!-- Le menu responsive -->
+<div class="row logo-et-titre">
+    <div class="col-1"><img src="images/simplon.png" alt="..." class="logo"></div>
+    <div class="col-11" ><h1 class="titre "> SIMPLON BURKINA</h1></div>
+</div>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light  div-du-header">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse couleur" id="navbarSupportedContent">
+          
+
+
+            <button type="button" class="btn  buttons col-" > <a class="nav-link" href="#">Home <span class="sr-only ecritures">voir la liste</span></a>
+                <img src="images/liste.jpg" alt="" width="20" height="20" title="Voir la liste">
+            </button>
+            <button type="button" class="btn  buttons"  onclick="myFunction()"><span class="ecritures">Imprimer</span>
+                <img src="images/imprimer.png" alt="" width="20" height="20" title="imprimer la liste">
+                </button>
+            <button type="button" class="btn  buttons"  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <span class="ecritures">Apprenants</span></button>
+   
+            <div class="form-inline buttons4">
+                <input class="form-control mr-sm-50 " size="" type="text" placeholder="Search" >
+                <button class="btn  l-icone-de-recherche   btn btn-outline-success my-2 my-sm-0" type="submit champ-de-recherche"> <i class="fa fa-search 1x"></i></button>
+              </div>
+            
+          
+        
+      </div>
+     
+
+      </nav>
+    
+
+    <!-- Le titre et le sous titre -->
+    <DIv class="le-titre-et-le-sous-titre">
+        <div class=""><H3 class="titre-general"> BIENVENU SUR VOTRE ESPACE DE TRAVAIL SIMPLON BURKINA</H3></div>
+        <div class=""><h4 class="titre_soustitre">ENREGISTRER UN APPRENANT</h4></div>
+    </DIv>
+   
+            
+        <!-- La photo -->
+        
+<!-- 
+Le formulaire -->
+
+<div class="le-div-general-du-formulaire">
+
+    
+        
+    <img src="" alt="" width="70" height="70" title="Ajouter une photo" class="photo"  accept="image/*" capture id="photo"> <input type="file"  accept="image/*" capture id="fichier">
+    
+    <form action=""form class="formulaire" enctype="multipart/form-data">
+            
+ <div class="div-du-sous-titre-parent-et-des-tirest">
+   <div class="row la-ligne-blanche">
+        <div class=" col les-tirest"></div>
+         </div>
+
+
+
+         <div class="row">
+           <div class="col- partie-sur-information-apprenant" > INFORMATION SUR L'APPRENANT</div>
+        </div>
+  </div>
+
+    <div class="formualire-apprenant"> 
+
+    <div class="les-champs-du-formulaire"> 
+       <div class="row champ">
+    <div class="col ">
+      <input type="text" class="form-control" placeholder="Nom">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Ville d'origine">
+    </div>
+  </div>
+
+  <div class="row champ">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Prenom">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Etablissement d'origine">
+        </div>
+      </div>
+
+
+      <div class="row champ">
+            <div class="col">
+              <input type="date" class="form-control" placeholder="Date de naissance">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Formation d'origine">
+            </div>
+          </div>
+
+
+
+          <div class="row champ">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Lieu de naisance">
+                </div>
+                <div class="col">
+                  <input type="tel" class="form-control" placeholder="Telephone">
+                </div>
+              </div>
+
+
+              <div class="row champ">
+                    <div class="col">
+                      
+      <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" >
+        <option value="1">Homme</option>
+        <option value="2">Femme</option>
+      </select>
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control" placeholder="Email" required="true">
+                    </div>
+                  </div>
+                </div>
+       </div>
+
+
+                
+<!-- 
+Le formulaire -->
+
+       <div class="formulaire-parent">
+    
+             
+  <div class="div-du-sous-titre-apprenats-et-des-tirest">
+         <div class="les-tirest-infos-tuteur"></div>
+          <div class="col-12 partie-sur-information-apprenant" > INFORMATION SUR LE TUTEUR</div>
+     </div>
+      
+      <div class="les-champs-du-formulaire">
+   <div class="row champ">
+     <div class="col ">
+       <input type="text" class="form-control" placeholder="NOM">
+     </div>
+     <div class="col">
+       <input type="text" class="form-control" placeholder="PROFESSION">
+     </div>
+   </div>
+ 
+   <div class="row champ">
+         <div class="col">
+           <input type="text" class="form-control" placeholder="PRENOM">
+         </div>
+         <div class="col">
+           <input type="text" class="form-control" placeholder="TELEPHONE" name="" maxlength="8" >
+         </div>
+       </div>
+ 
+     
+ <div class="row la-classe-de-enregistrer-et-de-annuler">
+   <div class="col">
+      <input class="btn btn-primary Enregistrer" type="submit" value="Enregistrer" ></div>
+      <div class="col">
+          <input class="btn btn-primary Annuler" type="reset" value="Annuler">
+</div>
+ </div>
+ </div>
+</div>
+
+  
+</div> 
+
+
+
+</div>
+
+</form>
+
+</div>
+
+
+<footer class="le-div-global-du-footer">
+    <div class="row footer">
+        <div class="col-1"><img src="images/simplon.png" alt="..." class="logo"></div>
+      <div class="col-11 le-copy-du-footer">&#9400;opyright simplon burkina tous droits reservés</div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+          
+
+
+
+
+
+
+
+
+            <script src="dist/js/jquery.slim.min.js"></script>
+            <script src="dist/js/bootstrap.min.js"></script>
+            <!-- <script src="main.js"></script> -->
+      
+  
+   
+   
+</body>
+</html>
