@@ -30,7 +30,7 @@ create table Tuteur
    idTuteur             int not null AUTO_INCREMENT,
    nomTuteur            varchar(50),
    prenomTuteur         varchar(50),
-   profession           varchar(100,
+   profession           varchar(100),
    telephoneTuteur      varchar(100),
    primary key (idTuteur)
 );
